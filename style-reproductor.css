@@ -259,3 +259,35 @@ footer {
 .play-btn:hover {
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
+
+/* Barra de progreso */
+.progress-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.time {
+    font-size: 12px;
+    color: #a0a0a0;
+    min-width: 45px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    width: 0%;
+    border-radius: 3px;
+    transition: width 0.1s linear;
+}
