@@ -30,6 +30,7 @@ align-items: center;
 margin-left: 50px;
 gap: 15px;
 margin-top: 3px;
+;
 }
 
 .barra_menu label img{
@@ -51,6 +52,7 @@ margin-top: 3px;
     height: 40px;
     cursor: pointer;
     padding: 3px;
+    
 }
 .barra_menu a img:hover{
     background-color: rgba(218, 209, 209, 0.452);
@@ -100,11 +102,9 @@ margin-top: 3px;
     color: #c7c7c7;
     border-left: 5px solid transparent;
     transition: all 400ms ease;
+
 }
-.cont-menu nav a:hover {
-    border-left: 5px solid #c7c7c7;
-    background: #1f1f1f;
-}
+
 .cont-menu label {
     position: absolute;
     right: 5px;
@@ -112,13 +112,6 @@ margin-top: 3px;
     color: #fff;
     cursor: pointer;
     font-size: 18px;
-}
-
-#Facebook{
-    background-color: #3b5998; 
-    padding: 10px 20px;
-    color: white;
-
 }
 
 
