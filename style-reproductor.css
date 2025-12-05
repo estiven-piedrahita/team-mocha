@@ -31,3 +31,142 @@ header {
     gap: 15px;
     border-bottom: 1px solid rgba(138, 43, 226, 0.3);
 }
+.back-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* Contenedor principal con sidebar y contenido */
+main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Barra lateral con navegación */
+aside {
+    width: 250px;
+    background: rgba(22, 33, 62, 0.6);
+    padding: 20px;
+    border-right: 1px solid rgba(138, 43, 226, 0.3);
+}
+
+nav h2 {
+    font-size: 14px;
+    color: #a0a0a0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav li:hover {
+    background: rgba(102, 126, 234, 0.2);
+}
+
+nav li.active {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%);
+    border-left: 3px solid #667eea;
+}
+
+/* Área de contenido principal - Lista de canciones */
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Lista de canciones */
+.playlist {
+    list-style: none;
+}
+
+.song-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.song-item:hover {
+    background: rgba(102, 126, 234, 0.2);
+    border-color: rgba(102, 126, 234, 0.5);
+    transform: translateX(5px);
+}
+
+.song-item.playing {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.3) 0%, rgba(118, 75, 162, 0.3) 100%);
+    border-color: #667eea;
+}
+
+.song-number {
+    font-size: 14px;
+    color: #a0a0a0;
+    width: 30px;
+}
+
+.song-info {
+    flex: 1;
+}
+
+.song-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.song-artist {
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+.song-duration {
+    font-size: 14px;
+    color: #a0a0a0;
+}
