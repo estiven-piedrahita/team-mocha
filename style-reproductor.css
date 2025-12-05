@@ -170,3 +170,48 @@ nav li.active {
     font-size: 14px;
     color: #a0a0a0;
 }
+/* Reproductor inferior */
+footer {
+    background: rgba(22, 33, 62, 0.95);
+    padding: 20px 30px;
+    border-top: 1px solid rgba(138, 43, 226, 0.3);
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Información de la canción actual */
+.current-song {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.album-art {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; 
+}
+
+.current-info {
+    flex: 1;
+}
+
+.current-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.current-artist {
+    font-size: 14px;
+    color: #a0a0a0;
+}
