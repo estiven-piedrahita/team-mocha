@@ -319,3 +319,44 @@ footer {
     width: 70%;
     border-radius: 3px;
 }
+
+/* Scrollbar personalizado */
+.content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.content::-webkit-scrollbar-thumb {
+    background: rgba(102, 126, 234, 0.5);
+    border-radius: 5px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background: rgba(102, 126, 234, 0.7);
+}
+
+/* Responsive básico */
+@media (max-width: 768px) {
+    aside {
+        width: 200px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .song-item {
+        padding: 12px 15px;
+    }
+
+    footer {
+        padding: 15px 20px;
+    }
+
+    .volume-control {
+        display: none;
+    }
+}
