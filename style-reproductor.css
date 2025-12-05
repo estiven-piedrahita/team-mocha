@@ -291,3 +291,31 @@ footer {
     border-radius: 3px;
     transition: width 0.1s linear;
 }
+
+/* Control de volumen */
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.volume-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.volume-bar {
+    width: 100px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.volume-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    width: 70%;
+    border-radius: 3px;
+}
