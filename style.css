@@ -252,7 +252,7 @@ span:hover{
     cursor: pointer;
 }
 
-.iconos-escritorio a {
+.iconos-escritorio button {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,5 +289,23 @@ span:hover{
     border-bottom: none;
     transform: scale(1.05);
 }
-
+.calendario,
+.calculadora,
+.musica {
+    display: none;
+    width: 400px;
+    height: 650px;
+    position: absolute;
+    top: 2px;
+    left: 29rem;
+    /* width: calc(90vw - 100px);
+    height: calc(90vh - 100px); */
+    overflow: hidden;
+}
+.calendario iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
 
