@@ -96,8 +96,8 @@ margin-top: 3px;
     cursor: pointer;
     padding: 1px;
     margin-left: 10px; 
-
 }
+
 #btn-menu {
     display: none;
 }
@@ -203,4 +203,91 @@ span:hover{
     padding-left: 20px;
     font-size: 15px;
 }
+
+.hora-wifi {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.hora-wifi img {
+    width: 25px;
+    height: 25px;
+}
+
+.hora-wifi span {
+    color: #c7c7c7;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.hora-wifi:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.iconos-escritorio {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+.iconos-escritorio div {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.iconos-escritorio a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.iconos-escritorio img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-bottom: 3px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.iconos-escritorio img:hover {
+    background-color: rgba(100, 89, 89, 0.39);
+    transform: scale(1.15);
+    border-radius: 10px;
+}
+
+.iconos-escritorio span {
+    color: #000000;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    width: auto;
+    margin-inline: 0;
+}
+
+.iconos-escritorio span:hover {
+    border-bottom: none;
+    transform: scale(1.05);
+}
+
 
