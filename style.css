@@ -125,12 +125,13 @@ margin-top: 3px;
     position: absolute;
     margin-top: 8%;
     max-width: 451px;
-    background: #383737;
+    background: #1d1c1c;
     height: 100vh;
     transition: all 500ms ease;
     transform: translateY(100%);
     max-height: 531px;
     border-radius: 2%;
+    z-index: 150;
 }
 #btn-menu:checked ~ .container-menu .cont-menu {
     transform: translateY(0%);
@@ -287,7 +288,7 @@ span:hover{
 }
 
 .iconos-escritorio {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     width: 120px;
@@ -357,12 +358,12 @@ span:hover{
     display: none;
     width: 400px;
     height: 650px;
-    position: absolute;
-    top: 2px;
-    left: 29rem;
-    /* width: calc(90vw - 100px);
-    height: calc(90vh - 100px); */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     overflow: hidden;
+    z-index: 100;
 }
 .calendario iframe {
     width: 100%;
@@ -372,13 +373,12 @@ span:hover{
 }
 
 .musica {
-    position: absolute;
-    top: 40px;
-    bottom: 60px;
-    right: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 75%;
     height: 87%;
-    left: 23%;
     display: none;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
@@ -393,14 +393,24 @@ span:hover{
 }
 
 .calculadora {
-    position: absolute;
-    bottom: 60px;
-    right: 50px;
+    /* position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 80vw;
     height: 80vh;
     display: none;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    z-index: 100; */
+    display: none;
+    width: 400px;
+    height: 650px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
     z-index: 100;
 }
 
