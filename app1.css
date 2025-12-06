@@ -36,3 +36,25 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     margin-bottom: 15px;
 }
+h1 {
+    font-size: 42px;
+    font-weight: 300;
+    margin: 0;
+}
+time {
+    color: #ccc;
+    font-size: 14px;
+    display: block;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    gap: 2px;
+}
