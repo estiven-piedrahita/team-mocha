@@ -21,19 +21,21 @@ botonCalendario.forEach(boton => {
 
 
 // musica
-const botonMusica = document.querySelector('.botonMusica');
+const botonMusica = document.querySelectorAll('.botonMusica');
 
 const musica = document.querySelector('.musica');
 
-botonMusica.addEventListener('click', () => {
+botonMusica.forEach( boton => {
+boton.addEventListener('click', () => {
     if(musica.style.display == 'none') {
-        console.log(frame);
+
         musica.style.display = 'flex';
     } else {
-        console.log(frame);
+
         musica.style.display = 'none';
     }
     
+})
 })
 
 // calculadora
@@ -43,10 +45,8 @@ const calculadora = document.querySelector('.calculadora');
 
 botonCalculadora.addEventListener('click', () => {
     if(calculadora.style.display == 'none') {
-        console.log(frame);
         calculadora.style.display = 'flex';
     } else {
-        console.log(frame);
         calculadora.style.display = 'none';
     }
     

@@ -353,9 +353,7 @@ span:hover{
     border-bottom: none;
     transform: scale(1.05);
 }
-.calendario,
-.calculadora,
-.musica {
+.calendario {
     display: none;
     width: 400px;
     height: 650px;
@@ -374,11 +372,13 @@ span:hover{
 }
 
 .musica {
-    position: fixed;
+    position: absolute;
+    top: 40px;
     bottom: 60px;
-    right: 50px;
-    width: 80vw;
-    height: 80vh;
+    right: 100px;
+    width: 75%;
+    height: 87%;
+    left: 23%;
     display: none;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
@@ -393,7 +393,7 @@ span:hover{
 }
 
 .calculadora {
-    position: fixed;
+    position: absolute;
     bottom: 60px;
     right: 50px;
     width: 80vw;
