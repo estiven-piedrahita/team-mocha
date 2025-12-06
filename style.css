@@ -243,7 +243,7 @@ span{
     margin-inline: -6px;
 }
 span:hover{
-    border-bottom: 2px solid rgba(56, 139, 247, 0.589);
+    border-bottom: 2px solid rgba(124, 175, 241, 0.384);
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -275,7 +275,7 @@ span:hover{
 }
 
 .hora-wifi span {
-    color: #c7c7c7;
+    color: #fffcfc;
     font-size: 20px;
     white-space: nowrap;
 }
@@ -381,7 +381,7 @@ span:hover{
     left: 23%;
     display: none;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
     z-index: 100;
 }
 

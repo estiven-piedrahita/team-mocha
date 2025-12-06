@@ -39,15 +39,16 @@ boton.addEventListener('click', () => {
 })
 
 // calculadora
-const botonCalculadora = document.querySelector('.botonCalculadora');
+const botonCalculadora = document.querySelectorAll('.botonCalculadora');
 
 const calculadora = document.querySelector('.calculadora');
-
-botonCalculadora.addEventListener('click', () => {
+botonCalculadora.forEach( boton => {
+boton.addEventListener('click', () => {
     if(calculadora.style.display == 'none') {
         calculadora.style.display = 'flex';
     } else {
         calculadora.style.display = 'none';
     }
     
+})
 })
