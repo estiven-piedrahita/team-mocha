@@ -1,70 +1,126 @@
-div h1 {
-    font-size: 4rem;
-    color: aliceblue;
-    text-align: center;
-}
-.contenedor-input {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    
-}
-.contenedor-input button {
-    width: 35px;
-    height: 35px;
-    border-radius: 8px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.contenedor-input input {
-    width: 300px;
-    height: 30px;
-    border-radius: 8px;
-    border: none;
-    background-color: gray;
-    margin-bottom: 3rem;
-    margin-right: 10px;
-    color: aliceblue;
-}
-.contenedor_calculadora {
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 130vh;
     width: 500px;
     height: 500px;
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background-image: url("img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
-.contenedor_botones {
-    width: 80%;
-    height: 50%;
-    
-    
+
+.contenedor_calculadora {
+    background: rgba(155, 255, 255, 0.95);    
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    width: 470px;
+    margin: auto;
+    margin-left: 100px;
+    background-position: center;
+        
 }
-.contenedor_botones div {
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contenedor-input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#display {
     width: 100%;
-    height: 35px;
-    padding: 4px;
-    
+    padding: 20px;
+    font-size: 28px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    text-align: right;
+    background: #f8f9fa;
+    color: #333;
+    font-weight: 500;
     
 }
 
-.contenedor_botones div button {
-    width: 80px;
-    height: 30px;
-}
-.contenedor_botones div .fila1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    ;
-}
-.contenedor_botones div .fila1 button {
-    margin-right: 12px;
-}
-
-.contenedor_botones div button:hover {
-    background-color: #e7e7e7af;
+#clear-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ff6b6b;
+    color: white;
     border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#clear-btn:hover {
+    background: #ff5252;
+    transform: translateY(-50%) scale(1.1);
+}
+
+#clear-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.contenedor_botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    background: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.operator {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.equals {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    grid-column: span 2;
+}
+
+.zero {
+    grid-column: span 2;
 }

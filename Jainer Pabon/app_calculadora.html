@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Calculator</title>
-</head>
-
-<body>
-    
-    <div class="contenedor_calculadora">
-        <div><h1>Calculator</h1></div>
-        <div class="contenedor-input">                    
-            <input id="Funtion" type="text">
-            <button><a href="index.html">x</a></button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        </head>
+    <body>
+        <div class="contenedor_calculadora">
+            <h1>Calculator</h1>
+            <div class="contenedor-input">                    
+                <input id="display" type="text" value="0" readonly>
+                <button id="clear-btn">C</button>
+            </div>
+            <div class="contenedor_botones">
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operator">/</button>
+                
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator">*</button>
+                
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operator">-</button>
+                
+                <button class="number zero">0</button>
+                <button class="decimal">.</button>
+                <button class="operator">+</button>
+                
+                <button class="equals">=</button>
+                
+            </div>
         </div>
-        <div class="contenedor_botones">
-            <div>
-            <div class="fila1">
-                <button>7</button> <button>8</button> <button>9</button> <button>/</button>
-            </div>
-            <div class="fila1">
-                <button>4</button> <button>5</button> <button>6</button> <button>*</button>
-            </div>
-            <div class="fila1">
-                <button>1</button> <button>2</button> <button>3</button> <button>-</button>
-            </div>
-            <div class="fila1">
-                <button>0</button> <button>.</button> <button>=</button> <button>+</button>
-            </div>
-            
-            </div>
-        </div>
-    </div>
-</body>
-
+        
+    </body>
 </html>
