@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-reproductor.css">
+    <title>Music</title>
+</head>
+<body>
+    <!-- Contenedor principal de la aplicación -->
+    <div class="app-container">
+        <!-- Encabezado con botón de regreso y título -->
+        <header>
+            <button class="back-button" onclick="window.location.href='index.html'">
+                ← Volver al Escritorio
+            </button>
+            <h1>Music</h1>
+        </header>
+
+        <!-- Contenido principal -->
+        <main>
+            <!-- Barra lateral con navegación -->
+            <aside>
+                <nav>
+                    <h2>Biblioteca</h2>
+                    <ul>
+                        <li class="active">🎵 Todas las canciones</li>
+                        <li>❤️ Me gusta</li>
+                        <li>📁 Álbumes</li>
+                        <li>👤 Artistas</li>
+                        <li>📋 Playlists</li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Área de contenido - Lista de canciones -->
+            <section class="content">
+                <h2>Todas las canciones</h2>
+                <ul class="playlist">
+                    <li class="song-item" data-song="0">
+                        <span class="song-number">1</span>
+                        <div class="song-info">
+                            <div class="song-title">Midnight Dreams</div>
+                            <div class="song-artist">The Synthwave Collective</div>
+                        </div>
+                        <span class="song-duration">3:45</span>
+                    </li>
+                    <li class="song-item" data-song="1">
+                        <span class="song-number">2</span>
+                        <div class="song-info">
+                            <div class="song-title">Neon Lights</div>
+                            <div class="song-artist">Electric Pulse</div>
+                        </div>
+                        <span class="song-duration">4:12</span>
+                    </li>
+                    <li class="song-item" data-song="2">
+                        <span class="song-number">3</span>
+                        <div class="song-info">
+                            <div class="song-title">Digital Horizon</div>
+                            <div class="song-artist">Cyber Beats</div>
+                        </div>
+                        <span class="song-duration">3:28</span>
+                    </li>
+                    <li class="song-item" data-song="3">
+                        <span class="song-number">4</span>
+                        <div class="song-info">
+                            <div class="song-title">Lost in Space</div>
+                            <div class="song-artist">Cosmic Vibes</div>
+                        </div>
+                        <span class="song-duration">5:01</span>
+                    </li>
+                    <li class="song-item" data-song="4">
+                        <span class="song-number">5</span>
+                        <div class="song-info">
+                            <div class="song-title">Retro Wave</div>
+                            <div class="song-artist">80s Revival</div>
+                        </div>
+                        <span class="song-duration">3:55</span>
+                    </li>
+                    <li class="song-item" data-song="5">
+                        <span class="song-number">6</span>
+                        <div class="song-info">
+                            <div class="song-title">Starlight Symphony</div>
+                            <div class="song-artist">The Synthwave Collective</div>
+                        </div>
+                        <span class="song-duration">4:33</span>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Reproductor inferior -->
+        <footer>
+            <div class="player-container">
+                <!-- Información de la canción actual -->
+                <div class="current-song">
+                    <div class="album-art">🎵</div>
+                    <div class="current-info">
+                        <div class="current-title" id="currentTitle">Selecciona una canción</div>
+                        <div class="current-artist" id="currentArtist">Para comenzar a reproducir</div>
+                    </div>
+                </div>
+
+                <!-- Controles del reproductor -->
+                <div class="player-controls">
+                    <div class="controls-buttons">
+                        <button class="control-btn" id="prevBtn">⏮</button>
+                        <button class="control-btn play-btn" id="playBtn">▶</button>
+                        <button class="control-btn" id="nextBtn">⏭</button>
+                    </div>
+
+                    <!-- Barra de progreso -->
+                    <div class="progress-container">
+                        <span class="time" id="currentTime">0:00</span>
+                        <div class="progress-bar" id="progressBar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <span class="time" id="totalTime">0:00</span>
+                    </div>
+
+                    <!-- Control de volumen -->
+                    <div class="volume-control">
+                        <span class="volume-icon">🔊</span>
+                        <div class="volume-bar" id="volumeBar">
+                            <div class="volume-fill" id="volumeFill"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js-reproductor.js"></script>
+
+
