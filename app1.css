@@ -11,3 +11,28 @@ body {
     padding: 20px;
     box-sizing: border-box;
 }
+main {
+    position: relative;
+    width: 340px;
+    background: rgba(32, 32, 32, 0.95);
+    backdrop-filter: blur(10px);
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.btn-return {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+}
